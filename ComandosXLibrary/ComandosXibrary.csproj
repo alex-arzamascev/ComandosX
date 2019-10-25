@@ -8,9 +8,4 @@
     
   </PropertyGroup>
 
-
-  <ItemGroup>
-    <Compile Remove="Class1.cs" />
-  </ItemGroup>
-
 </Project>
