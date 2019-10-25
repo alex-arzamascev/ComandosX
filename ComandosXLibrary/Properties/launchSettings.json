@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "ComandosXLibrary": {
+      "commandName": "Project",
+      "workingDirectory": "",
+      "nativeDebugging": false
+    }
+  }
+}
