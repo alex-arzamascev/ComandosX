@@ -18,7 +18,6 @@ namespace ComandosXLibrary
     public class CommandRealizer
     {
 
-        #region Fields
 
 
         private static int counter = 0;
@@ -29,15 +28,8 @@ namespace ComandosXLibrary
         private static Dictionary<int, LinkedListNode<string>> directoriesNodesList
             = new Dictionary<int, LinkedListNode<string>>();
 
-        
-        #endregion
 
 
-
-
-
-
-        #region Constructor
 
         static CommandRealizer()
         {
@@ -47,14 +39,6 @@ namespace ComandosXLibrary
            
         }
 
-        #endregion
-
-
-
-
-
-
-        #region Enum MoveNirCmdZip
 
 
         [Flags]
@@ -65,13 +49,6 @@ namespace ComandosXLibrary
         }
 
 
-        #endregion
-
-
-
-
-
-        #region Element struct
 
 
         public struct Element
@@ -85,12 +62,12 @@ namespace ComandosXLibrary
         }
 
 
-        #endregion
 
 
+        #region // Get help informaion Function
 
-
-
+            
+            
         public static void _GetHelpInformation() 
         {
             ComandosPrinter.WriteLine();
@@ -114,9 +91,9 @@ namespace ComandosXLibrary
             }.ForEach((comands) => ComandosPrinter.WriteLine("\t\t" + comands));      
 
         }
+        
 
-
-
+        #endregion
 
 
 
