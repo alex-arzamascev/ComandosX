@@ -63,7 +63,7 @@ namespace ComandosX
 
 
 
-                #region // Clear console an Help Function 
+                #region // Clear console and Show help information
 
                 if (ComandosCommand == "cl")
                     Console.Clear();
