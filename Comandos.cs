@@ -25,12 +25,12 @@ namespace ComandosX
         }
 
         
-        public string ComandosTitle { get; set; }
-        public string ComandosExecPath { get; set; }
-        private bool ComandosIsRuning { get; set; }
+        public string ComandosTitle;
+        public string ComandosExecPath;
+        private bool ComandosIsRuning;
 
 
-        #region // Constructor
+
 
         public Comandos(string execPath, string Title, bool isRuning)
         {
@@ -42,7 +42,7 @@ namespace ComandosX
 
         }
 
-        #endregion
+
 
 
 
