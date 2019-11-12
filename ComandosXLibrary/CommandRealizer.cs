@@ -41,16 +41,6 @@ namespace ComandosXLibrary
 
 
 
-        [Flags]
-        public enum MoveNirCmdZip
-        {
-            no = 1,
-            yes = 2
-        }
-
-
-
-
         public struct Element
         {
             public struct CreationTime
@@ -400,7 +390,7 @@ namespace ComandosXLibrary
                                 ZipFile.ExtractToDirectory(nircmdBacupZip, nirCmdPath);
                                 break;
                             case 2:
-                                download(MoveNirCmdZip.no);
+                                download(MoveNirCmdZip.No);
                                 break;
                         };
                     }
@@ -408,7 +398,7 @@ namespace ComandosXLibrary
                     
                 }
 
-                else download(MoveNirCmdZip.yes); 
+                else download(MoveNirCmdZip.Yes); 
 
 
                 void download(MoveNirCmdZip move)
@@ -428,7 +418,7 @@ namespace ComandosXLibrary
                         {
 
 
-                            if (move.HasFlag(MoveNirCmdZip.no))
+                            if (move.HasFlag(MoveNirCmdZip.No))
                             {
                                 ZipFile.ExtractToDirectory(nircmdZipFile, nirCmdPath);
                                 new FileInfo(nircmdZipFile).Delete();
@@ -436,7 +426,7 @@ namespace ComandosXLibrary
 
 
             
-                            if (move.HasFlag(MoveNirCmdZip.yes))
+                            if (move.HasFlag(MoveNirCmdZip.Yes))
                             {
                                 ZipFile.ExtractToDirectory(nircmdZipFile, nirCmdPath);
 
