@@ -60,15 +60,7 @@ namespace ComandosXLibrary
             
         public static void _GetHelpInformation() 
         {
-            ComandosPrinter.WriteLine();
-            ComandosPrinter.WriteLine
-                (
-                
-                "\t\t\t\tComands\n" + 
-                "\t\t#######################################"
-                
-                );
-
+         
             new List<string> 
             {
             
