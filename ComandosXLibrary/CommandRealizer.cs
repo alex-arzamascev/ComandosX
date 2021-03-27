@@ -306,21 +306,7 @@ namespace ComandosXLibrary
 
         public static void _SetConsoleColor(int mustColor)
         {
-            var consoleColors = (ConsoleColor[])Enum.GetValues(typeof(ConsoleColor));
-            var colorsList = new Dictionary<int, ConsoleColor>();
-
-            var colors = consoleColors.GetEnumerator();
-  
-            int counter = 0;
-            while (colors.MoveNext())
-            {
-                colorsList.Add(counter++, (ConsoleColor)colors.Current);
-            }
-
-            colorsList.TryGetValue(mustColor, out ConsoleColor color);
-
-            ComandosColorChooser.ForegroundColor = color;
-            
+            ComandosColorChooser.ForegroundColor = (ConsoleColor)mustColor;
         }
 
         #endregion
